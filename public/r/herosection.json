@@ -7,7 +7,7 @@
   "registryDependencies": [],
   "files": [
     {
-      "path": "src/app/registry/herosection/herosection.js",
+      "path": "src/component/herosection/herosection.js",
       "type": "registry:component",
       "content": "import { Button } from \"@/components/ui/button\";\n\nexport default function HeroSection() {\n  return (\n    <section className=\"w-full py-24 bg-background\">\n      <div className=\"container mx-auto px-6 text-center\">\n        <h1 className=\"text-4xl md:text-6xl font-bold tracking-tight\">\n          Build Faster with shadcn/ui\n        </h1>\n        <p className=\"mt-6 text-lg text-muted-foreground max-w-2xl mx-auto\">\n          Beautifully designed components that you can copy, paste, and customize\n          for your Next.js applications.\n        </p>\n        <div className=\"mt-8 flex justify-center gap-4\">\n          <Button size=\"lg\">Get Started</Button>\n          <Button size=\"lg\" variant=\"outline\">\n            Learn More\n          </Button>\n        </div>\n      </div>\n    </section>\n  );\n}\n"
     }

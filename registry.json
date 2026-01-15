@@ -10,7 +10,7 @@
       "description": "A hero section component.",
       "files": [
         {
-          "path": "src/app/registry/herosection/herosection.js",
+          "path": "src/component/herosection/herosection.js",
           "type": "registry:component"
         }
       ]

@@ -1,4 +1,4 @@
-import { HeroSection } from "./registry/herosection/herosection.js";
+import { HeroSection } from "@/component/herosection/herosection";
 
 export default function Home() {
   return (
