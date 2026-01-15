@@ -3,7 +3,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { cn } from "@/lib/utils";
+import { cn } from "@/lib/utils"; // Keep this if your new project has lib/utils
 
 export function HeroSection({
   className,
@@ -11,12 +11,7 @@ export function HeroSection({
   opacity = 0.21,
 }) {
   return (
-    <section
-      className={cn(
-        "relative overflow-hidden bg-background",
-        className
-      )}
-    >
+    <section className={cn("relative overflow-hidden bg-background", className)}>
       {/* Spotlight Background */}
       <svg
         className="pointer-events-none absolute inset-0 z-[1] h-[169%] w-[138%] lg:w-[84%] opacity-0 animate-spotlight"
@@ -36,7 +31,6 @@ export function HeroSection({
             fillOpacity={opacity}
           />
         </g>
-
         <defs>
           <filter
             id="spotlight-filter"
@@ -48,12 +42,7 @@ export function HeroSection({
             colorInterpolationFilters="sRGB"
           >
             <feFlood floodOpacity="0" result="BackgroundImageFix" />
-            <feBlend
-              mode="normal"
-              in="SourceGraphic"
-              in2="BackgroundImageFix"
-              result="shape"
-            />
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
             <feGaussianBlur stdDeviation="150" />
           </filter>
         </defs>
@@ -61,7 +50,6 @@ export function HeroSection({
 
       {/* Hero Content */}
       <div className="relative z-10 mx-auto grid min-h-screen max-w-7xl grid-cols-1 items-center gap-12 px-6 py-20 lg:grid-cols-2">
-        
         {/* Text Content */}
         <div>
           <motion.h1
@@ -80,7 +68,7 @@ export function HeroSection({
             className="mt-6 max-w-xl text-lg text-muted-foreground"
           >
             Create fast, beautiful landing pages using Next.js, Tailwind CSS,
-            Framer Motion, and shadcn/ui components.
+            Framer Motion, and self-contained reusable components.
           </motion.p>
 
           <motion.div
