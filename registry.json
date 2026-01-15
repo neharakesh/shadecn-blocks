@@ -1,0 +1,19 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "acme",
+  "homepage": "https://acme.com",
+  "items": [
+    {
+      "name": "herosection",
+      "type": "registry:block",
+      "title": "Hero Section",
+      "description": "A hero section component.",
+      "files": [
+        {
+          "path": "src/app/registry/herosection/herosection.js",
+          "type": "registry:component"
+        }
+      ]
+    }
+  ]
+}
